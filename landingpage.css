@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+.sign-in {
+    background: #6453ff;
+    padding: 10px 20px;
+    margin-right: 70px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sign-in:hover {
+    background: #4a3bbf;
+    transform: scale(1.05);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 20px 20px 20px;
+    background: url("https://img.freepik.com/premium-vector/abstract-black-background-dynamic-black-landing-page_249611-4935.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716768000&semt=ais_user");
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    height: calc(100vh - 80px); /* Adjust for header height */
+    color: #fff;
+}
+
+.left, .right {
+    width: 48%;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    width: 300px;
+}
+
+.search button {
+    padding: 10px;
+    border: none;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search button:hover {
+    background: #ddd;
+}
+
+.search button i {
+    color: #333;
+}
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-free-trial {
+    background: #00aaff;
+    color: #fff;
+    border-color: #00aaff;
+}
+
+.btn-see-more {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.buttons button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .search input {
+        width: 200px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        margin: 10px 0;
+    }
+}
